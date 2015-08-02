@@ -1,0 +1,6 @@
+﻿## Interface: 11200
+## Title: GuildBankManager (v1.5)
+## Author: Steven M. (admin@sigmaroot.de)
+## Notes: Gildenbank-Verwaltung für Vanilla WoW inkl. Web-Schnittstelle
+## SavedVariables: gbm_guildmembers, gbm_bank, gbm_excepts
+GuildBankManager.xml
