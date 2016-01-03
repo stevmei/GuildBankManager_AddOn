@@ -24,7 +24,7 @@ function GBM_SlashHandler(arg)
 		return;
 	end
 	if (string.sub(arg, 1, string.len(arg)) == "info") then
-		ChatFrame1:AddMessage("|c00FFD700G|c00FFFFFFuild|c00FFD700B|c00FFFFFFank|c00FFD700M|c00FFFFFFanager: Version 1.5 by Steven M. aka Xeranos <Ultima> - Mail: admin@sigmaroot.de|r");
+		ChatFrame1:AddMessage("|c00FFD700G|c00FFFFFFuild|c00FFD700B|c00FFFFFFank|c00FFD700M|c00FFFFFFanager: Version 2.0 by Steven M. aka Xeranos <Ultima> - Mail: admin@sigmaroot.de|r");
 		return;
 	end
 	ChatFrame1:AddMessage("|c00FFD700G|c00FFFFFFuild|c00FFD700B|c00FFFFFFank|c00FFD700M|c00FFFFFFanager: |c00FF0000Argumente: inventar, gilde, ausnahme, info|r");
@@ -122,7 +122,9 @@ function saveBagRoster()
 				index = index + 1;
 			end
 		end
-	end	
+	end
+	local charGold = GetMoney();
+	data_table[index] = charGold.."%999999%1%Gold";
 	if (gbm_bank == nil) then
 		gbm_bank = {};
 	end
